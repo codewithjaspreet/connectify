@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
 
                 }
 
-                val navController  = rememberNavController()
+                val navController = rememberNavController()
                 NavGraph(navController = navController)
 
             }

@@ -116,11 +116,11 @@ fun Login(navHostController: NavController){
     }
 }
 
-@Composable
-@Preview(showBackground = true , showSystemUi = true)
-
-fun LoginPreview(){
-
-//    Login()
-
-}
+//@Composable
+//@Preview(showBackground = true , showSystemUi = true)
+//
+//fun LoginPreview(){
+//
+////    Login()
+//
+//}

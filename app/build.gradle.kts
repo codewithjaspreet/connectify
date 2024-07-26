@@ -62,6 +62,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.firebase.common.ktx)
     implementation(libs.firebase.auth.ktx)
+    implementation(libs.firebase.database.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -72,11 +73,13 @@ dependencies {
 
     val nav_version = "2.7.7"
 
-    implementation("androidx.navigation:navigation-compose:$nav_version")
-    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
-    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
-    implementation(platform("com.google.firebase:firebase-auth"))
-    implementation(platform("com.google.firebase:firebase-firestore"))
-    implementation(platform("com.google.firebase:firebase-database"))
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.constraintlayout.compose)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.database)
+    implementation(libs.coil.compose)
+
 
 }

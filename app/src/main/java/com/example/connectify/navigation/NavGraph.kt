@@ -1,4 +1,5 @@
 package com.example.connectify.navigation
+
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -15,14 +16,15 @@ import com.example.connectify.screens.Splash
 
 
 @Composable
-fun NavGraph(navController: NavHostController){
+fun NavGraph(navController: NavHostController) {
 
     NavHost(
-        navController = navController ,
-        startDestination = Routes.Splash.routes) {
+        navController = navController,
+        startDestination = Routes.Splash.routes
+    ) {
 
         composable(Routes.Splash.routes) {
-           Splash(navController)
+            Splash(navController)
         }
         composable(Routes.Home.routes) {
             Home()
